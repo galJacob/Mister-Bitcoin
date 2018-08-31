@@ -1,0 +1,44 @@
+.contact-preview {
+    a {
+        text-decoration: none;
+    }
+    img {
+        width: 45px;
+        height: 45px;
+    }
+    hr {
+        margin: 0;
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .contact-container {
+        display: flex;
+        height: 60px;
+        padding-left: 0.25rem;
+        border-radius: 0.2rem 0.2rem 0rem 0rem; // margin-bottom: 1rem;
+        background-color: rgba(62, 111, 141, 0.6);
+        -ms-flex-align: center;
+        align-items: center;
+        &:hover {
+            background-color: rgba(62, 111, 141, 1);
+        }
+        .name-phone-container {
+            padding-left: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            span:first-child {
+                font-size: 1.1rem;
+                opacity: 0.8;
+                color: white;
+            }
+            span:last-child {
+                font-size: 0.7em;
+                text-align: left;
+                opacity: 0.5;
+                font-weight: bold;
+            }
+        }
+    }
+}

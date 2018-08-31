@@ -1,0 +1,46 @@
+.contact-list {
+    overflow-x: unset;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 37%;
+        width: 22vw;
+        height: 68vh;
+        overflow-y: scroll;
+        align-items: center;
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px black;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background:rgba(62, 111, 141,0.6);
+            // background: #3E6F8D;
+            // opacity: 0.6;
+        }
+        li {
+            cursor: pointer;
+            width: stretch;
+        }
+    }
+    .add-contact-btn {
+        font-size: 2em;
+        transition: all .3s;
+        position: absolute;
+        color: white;
+        opacity: 0.6;
+        right: 3%;
+        bottom: 6vh;
+        cursor: pointer;
+        &:hover {
+            color:#947546;
+        }
+    }
+}
