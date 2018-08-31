@@ -2,6 +2,7 @@
   "name": "mister-bitcoin",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://galjacob.github.io/Mister-Bitcoin/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
@@ -32,6 +33,7 @@
     "file-loader": "1.1.5",
     "font-awesome": "^4.7.0",
     "fs-extra": "3.0.1",
+    "gh-pages": "^1.2.0",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "moment": "^2.22.2",
@@ -59,6 +61,8 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
