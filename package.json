@@ -2,7 +2,7 @@
   "name": "mister-bitcoin",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://galjacob.github.io/Mister-Bitcoin/",
+  "homepage": "https://galjacob.github.io/mister-bitcoin/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
