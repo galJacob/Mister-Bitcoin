@@ -20,7 +20,7 @@ class ContactPage extends Component {
                 })
             })
             .catch(() => {
-                alert('sign up!');
+                // alert('sign up!');
                 this.props.history.push('/');
             })
     }
