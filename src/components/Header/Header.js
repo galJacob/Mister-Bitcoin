@@ -19,7 +19,6 @@ class Header extends Component {
         })
     }
     setActiveLink = linkType => {
-        if (!this.state.loggedInUser) return;
         this.setState({ isActive: linkType });
     }
     render() {
