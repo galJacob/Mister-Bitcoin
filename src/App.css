@@ -6,6 +6,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-a{
+
+a {
   color: unset;
+}
+
+@media (max-width:500px) {
+  .App {
+    background-position: inherit;
+  }
 }

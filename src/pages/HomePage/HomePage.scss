@@ -70,3 +70,46 @@
         margin-top: 4rem;
     }
 }
+
+@media (max-width:500px) {
+    .home-page {
+        img {
+            height: 75px;
+            width: 75px;
+            top: 7%;
+        }
+        h1.greetings {
+            text-align: left;
+            padding-left: 7rem;
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        .user-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1rem;
+            * {
+                font-size: 1.3rem
+            }
+            h2:nth-child(3) {
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .btc-val-container {
+            position: initial;
+            * {
+                font-size: 1.3rem
+            }
+        }
+        .user-btc-cont {
+            display: flex;
+            flex-direction: column;
+        }
+        .moves-list-container {
+            margin-top: 1rem;
+        }
+    }
+}

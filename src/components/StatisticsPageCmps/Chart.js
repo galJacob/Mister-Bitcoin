@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import BitconService from '../../services/BitconService';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import moment from 'moment';
+import './Chart.scss';
 
 class ChartCmp extends Component {
     constructor(props) {
@@ -43,8 +44,9 @@ class ChartCmp extends Component {
                         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                         <CartesianGrid vertical={false} />
                         {/* {console.log(this.state.resValues)} */}
-                        <XAxis stroke="white" tick={{fill:'#efefef'}} interval={29} tickFormatter={this.formatTicks} dataKey="x" />
-                        <YAxis stroke="white" tick={{fill:'#efefef'}} />
+                        <XAxis stroke="white" tick={{ fill: '#efefef' }} interval={window.innerWidth <= 500 ? 65 : 29}
+                            tickFormatter={this.formatTicks} dataKey="x" />
+                        <YAxis stroke="white" tick={{ fill: '#efefef' }} />
                         <Tooltip formatter={this.formatToolTip} cursor={false} />
                         <Line activeDot={true} dot={false} type="linear" dataKey="value" strokeWidth={2.5} stroke="#039BD3" />
                     </LineChart>

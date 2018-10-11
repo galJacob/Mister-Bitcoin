@@ -21,8 +21,7 @@
             border-radius: 10px;
         }
         &::-webkit-scrollbar-thumb:hover {
-            background:rgba(62, 111, 141,0.6);
-            // background: #3E6F8D;
+            background: rgba(62, 111, 141, 0.6); // background: #3E6F8D;
             // opacity: 0.6;
         }
         li {
@@ -40,7 +39,24 @@
         bottom: 6vh;
         cursor: pointer;
         &:hover {
-            color:#947546;
+            color: #947546;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .contact-list {
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 75vw;
+            height: 60vh;
+            overflow-y: scroll;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0;
         }
     }
 }
