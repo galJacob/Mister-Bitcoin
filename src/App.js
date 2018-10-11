@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Routes } from './routes';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
