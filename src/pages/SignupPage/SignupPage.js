@@ -10,7 +10,6 @@ class SignUp extends Component {
         }
         UserService.checkIfUser()
             .then(() => {
-                alert('already logged in!');
                 this.props.history.push('/');
             })
             .catch(() => { })
