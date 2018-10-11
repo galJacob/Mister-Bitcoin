@@ -20,7 +20,7 @@ class App extends Component {
       this.setState({ loggedInUser })
       // console.log(this.state.loggedInUser);
     }).catch(() => {
-      alert('please sign up')
+      // alert('please sign up')
     })
   }
   render() {
