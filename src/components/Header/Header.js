@@ -21,6 +21,10 @@ class Header extends Component {
     setActiveLink = linkType => {
         this.setState({ isActive: linkType });
     }
+    //WARNING! To be deprecated in React v17. Use componentDidMount instead.
+    componentDidUpdate(prevProps, prevState) {
+        
+    }
     render() {
         return (
             <section className="header">

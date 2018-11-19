@@ -2,10 +2,12 @@ import { ADD_MOVE } from './Action-types';
 import { FILTER_LIST } from './Action-types';
 import Utils from '../Utils';
 
+
 const initialState = {
     userMoves: Utils.loadUserFromStorage() ? Utils.loadUserFromStorage().moves : [],
     contactList: [],
 };
+
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_MOVE:
