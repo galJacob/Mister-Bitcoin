@@ -16,6 +16,7 @@ class App extends Component {
     };
   }
   componentDidMount() {
+    
     UserService.checkIfUser().then(loggedInUser => {
       this.setState({ loggedInUser })
       // console.log(this.state.loggedInUser);
